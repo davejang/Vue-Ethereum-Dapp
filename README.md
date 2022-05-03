@@ -5,7 +5,7 @@
 ```
 npm install
 npm install ganache-cli
-npm install -g truffle@5.0.4
+npm install -g truffle
 ```
 
 ### Make .env at root directory
