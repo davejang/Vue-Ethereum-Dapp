@@ -13,7 +13,7 @@ module.exports = {
       provider: function() {
         return new HDWalletProvider(
           process.env.MNEMONIC,
-          'https://ropsten.infura.io/v3/9897db300b2647c684d0abeb2bd1d3a2'
+          'https://ropsten.infura.io/v3/${process.env.INFURA_API_KEY}'
         )
       },
       gas: 5000000,
@@ -23,7 +23,7 @@ module.exports = {
       provider: function() {
         return new HDWalletProvider(
           process.env.MNEMONIC,
-          'https://kovan.infura.io/v3/9897db300b2647c684d0abeb2bd1d3a2'
+          'https://kovan.infura.io/v3/${process.env.INFURA_API_KEY}'
         )
       },
       gas: 5000000,

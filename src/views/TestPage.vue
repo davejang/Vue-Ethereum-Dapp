@@ -67,6 +67,7 @@
             },
         },
         watch: {
+            
             isValueUpdated: function(newValue){
                 if(newValue == true){
                   window.location.reload(true);
@@ -75,6 +76,7 @@
         },
         created: function() {
             const store = useStore();
+            document.title = 'Ethereum Dapp'
 
             this.getCurrentValue();
             window.ethereum.on('accountsChanged', function (accounts) {
